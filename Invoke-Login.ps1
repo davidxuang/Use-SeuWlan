@@ -43,7 +43,7 @@ if ($isDorm) {
     Write-Debug 'Non-dormitory environment detected.'
 }
 
-$headers = @{'DHT' = '1'; 'Referer' = $serverHost }
+$headers = @{ 'Referer' = $serverHost }
 
 $urlQuery = $serverHost + 'drcom/chkstatus?callback=dr1000'
 Write-Debug "Connecting to $($urlQuery)"
